@@ -3,7 +3,6 @@ const app = express();
 
 const bodyParser = require('body-parser');
 const bcrypt = require('bcrypt');
-const methodOverride = require('method-override');
 
 require('dotenv').config();
 

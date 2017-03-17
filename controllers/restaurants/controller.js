@@ -1,4 +1,4 @@
-const Yelp = require('../../services/restaurants.js');
+const Yelp = require('../../services/restaurant.js');
 
 const controller = {};
 
