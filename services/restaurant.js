@@ -3,9 +3,11 @@ const fetch = require('node-fetch');
 const yelp = {};
 const Token = process.env.access_token;
 
+
 yelp.search = (lat, long, term) => {
 
-  return fetch(`https://api.yelp.com/v3/businesses/search?term=${term}&radius=403&latitude=${lat}&longitude=${long}&radius_filter=403`, {
+ 
+  return fetch(`https://api.yelp.com/v3/businesses/search?term=${term}&radius=403&latitude=${lat}&longitude=${long}&radius_filter=403&limit=50`, {
     method: 'GET',
     headers: {
       'Content-Type': 'application/x-www-form-urlencoded',
